@@ -21,9 +21,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{fontSize: 35, fontWeight: "bold"}}>Discount Calculator!</Text>
+      <Text style={{fontSize: 35, fontWeight: "bold", backgroundColor: "silver", width: 400, textAlign: "center" ,justifyContent: "center", borderRadius: 10}}>Discount Calculator!</Text>
       <Text style={{fontSize: 20}}>Wamiq Waheed - SP18-BCS-171</Text>
-      <Text style={{fontSize:20, fontWeight: "bold", marginTop: 20}}>Original Price</Text>
+      <Text style={{fontSize:20, fontWeight: "bold", marginTop: 20}}>Enter Original Price</Text>
       <TextInput keyboardType={"number-pad"} style={{borderWidth: 1, width: 200, borderRadius: 5, fontSize: 20}} value={price} onChangeText={(EnteredPrice) => setprice(EnteredPrice)}/>
       <Text style={{fontSize:20, fontWeight: "bold", marginTop: 20}}>Enter Discount (%)</Text>
       <TextInput keyboardType={"number-pad"} style={{borderWidth: 1, width: 200, borderRadius: 5, fontSize: 20}} value={discount} onChangeText={(EnteredPrice) => setdiscount(EnteredPrice)}/>
